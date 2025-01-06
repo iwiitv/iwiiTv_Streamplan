@@ -55,3 +55,40 @@ table.stream-schedule td {
     font-weight: bold;
     color: #ffcc00;
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    table.stream-schedule {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    table.stream-schedule th, table.stream-schedule td {
+        padding: 8px;
+    }
+
+    /* Make header text smaller */
+    table.stream-schedule thead {
+        font-size: 1em;
+    }
+}
+
+/* Media Query for extra small screens (like phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    table.stream-schedule {
+        width: 100%;
+        font-size: 0.75em;
+    }
+
+    table.stream-schedule th, table.stream-schedule td {
+        padding: 6px;
+    }
+}
