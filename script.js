@@ -38,5 +38,4 @@ function addStream(day, time, game, notes) {
 // Run the function to highlight today's row
 highlightCurrentDay();
 
-// Example: Add a new stream dynamically (can be done in the browser console too)
-addStream("Samstag", "16:00 - 18:00", "Dark Souls", "Blind Run");
+
