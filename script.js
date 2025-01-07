@@ -1,5 +1,3 @@
-// script.js
-
 // Highlight the current day in the table
 function highlightCurrentDay() {
     const daysOfWeek = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
@@ -33,9 +31,25 @@ function addStream(day, time, game, notes) {
 
     // Append the new row to the table
     tbody.appendChild(newRow);
+
+    // Add click event listener to the new row
+    newRow.addEventListener("click", () => {
+        window.open("https://twitch.tv/iwiitv", "_blank");
+    });
+}
+
+// Add click event listeners to existing rows
+function addRowClickListeners() {
+    const rows = document.querySelectorAll("#schedule-body tr");
+    rows.forEach(row => {
+        row.addEventListener("click", () => {
+            window.open("https://twitch.tv/iwiitv", "_blank");
+        });
+    });
 }
 
 // Run the function to highlight today's row
 highlightCurrentDay();
 
-
+// Add click event listeners to existing rows
+addRowClickListeners();
